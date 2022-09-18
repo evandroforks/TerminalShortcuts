@@ -3,21 +3,21 @@
         "caption": "Preferences: Terminal Settings – Default",
         "command": "open_file",
         "args": {
-            "file": "${packages}/Terminal/Terminal.sublime-settings"
+            "file": "${packages}/TerminalShortcuts/TerminalShortcuts.sublime-settings"
         }
     },
     {
         "caption": "Preferences: Terminal Settings – User",
         "command": "open_file",
         "args": {
-            "file": "${packages}/User/Terminal.sublime-settings"
+            "file": "${packages}/User/TerminalShortcuts.sublime-settings"
         }
     },
     {
         "caption": "Preferences: Terminal Key Bindings – Default",
         "command": "open_file",
         "args": {
-            "file": "${packages}/Terminal/Default (Windows).sublime-keymap",
+            "file": "${packages}/TerminalShortcuts/Default (Windows).sublime-keymap",
             "platform": "Windows"
         }
     },
@@ -25,7 +25,7 @@
         "caption": "Preferences: Terminal Key Bindings – Default",
         "command": "open_file",
         "args": {
-            "file": "${packages}/Terminal/Default (OSX).sublime-keymap",
+            "file": "${packages}/TerminalShortcuts/Default (OSX).sublime-keymap",
             "platform": "OSX"
         }
     },
@@ -33,7 +33,7 @@
         "caption": "Preferences: Terminal Key Bindings – Default",
         "command": "open_file",
         "args": {
-            "file": "${packages}/Terminal/Default (Linux).sublime-keymap",
+            "file": "${packages}/TerminalShortcuts/Default (Linux).sublime-keymap",
             "platform": "Linux"
         }
     },

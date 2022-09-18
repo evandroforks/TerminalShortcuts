@@ -22,14 +22,14 @@ else:
     installed_dir = os.path.basename(os.getcwd())
 
 def get_setting(key, default=None):
-    settings = sublime.load_settings('Terminal.sublime-settings')
+    settings = sublime.load_settings('TerminalShortcuts.sublime-settings')
     os_specific_settings = {}
     if os.name == 'nt':
-        os_specific_settings = sublime.load_settings('Terminal (Windows).sublime-settings')
+        os_specific_settings = sublime.load_settings('TerminalShortcuts (Windows).sublime-settings')
     elif sys.platform == 'darwin':
-        os_specific_settings = sublime.load_settings('Terminal (OSX).sublime-settings')
+        os_specific_settings = sublime.load_settings('TerminalShortcuts (OSX).sublime-settings')
     else:
-        os_specific_settings = sublime.load_settings('Terminal (Linux).sublime-settings')
+        os_specific_settings = sublime.load_settings('TerminalShortcuts (Linux).sublime-settings')
     return os_specific_settings.get(key, settings.get(key, default))
 
 
@@ -130,7 +130,7 @@ class TerminalCommand():
         elif self.window.folders():
             return self.window.folders()[0]
         else:
-            sublime.error_message('Terminal: No place to open terminal to')
+            sublime.error_message('TerminalShortcuts: No place to open terminal to')
             return False
 
     def run_terminal(self, dir_, parameters):
@@ -173,10 +173,10 @@ class TerminalCommand():
 
         except (OSError) as exception:
             print(str(exception))
-            sublime.error_message('Terminal: The terminal ' +
+            sublime.error_message('TerminalShortcuts: The terminal ' +
                 TerminalSelector.get() + ' was not found')
         except (Exception) as exception:
-            sublime.error_message('Terminal: ' + str(exception))
+            sublime.error_message('TerminalShortcuts: ' + str(exception))
 
 
 class OpenTerminalCommand(sublime_plugin.WindowCommand, TerminalCommand):

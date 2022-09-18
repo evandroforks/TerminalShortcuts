@@ -1,4 +1,4 @@
-# Sublime Terminal
+# Sublime TerminalShortcuts
 
 Shortcuts and menu entries for opening a terminal at the current file, or the current root project folder in [Sublime Text](http://sublimetext.com/).
 
@@ -64,15 +64,13 @@ See also:
 ## Usage
 
  - **Open Terminal at File**
-     Press *ctrl+shift+t* on Windows and Linux, or *cmd+shift+t* on OS X
  - **Open Terminal at Project Folder**
-     Press *ctrl+alt+shift+t* on Windows and Linux, or *cmd+alt+shift+t* on OS X
 
 In addition to the key bindings, terminals can also be opened via the editor context menu and the sidebar context menus.
 
 ## Package Settings
 
-The default settings can be viewed by accessing the ***Preferences > Package Settings > Terminal > Settings – Default*** menu entry. To ensure settings are not lost when the package is upgraded, make sure all edits are saved to ***Settings – User***.
+The default settings can be viewed by accessing the ***Preferences > Package Settings > TerminalShortcuts > Settings – Default*** menu entry. To ensure settings are not lost when the package is upgraded, make sure all edits are saved to ***Settings – User***.
 
  - **terminal**
      - The terminal to execute, will default to the OS default if blank. OS X users may enter *iTerm.sh* to launch iTerm if installed.
